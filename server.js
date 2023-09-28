@@ -10,7 +10,7 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => console.log("connected"))
-  .catch((e) => console.log(e));
+  .catch((e) => console.error(e));
 
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
